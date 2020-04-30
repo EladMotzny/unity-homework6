@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\emotz\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\emotz\\.nuget\\packages"
+    ]
+  }
+}
