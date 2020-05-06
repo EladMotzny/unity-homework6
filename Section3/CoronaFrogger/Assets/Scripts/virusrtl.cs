@@ -9,14 +9,21 @@ public class virusrtl : MonoBehaviour
     [Tooltip("The higher end of the possible speed for the enemy")] [SerializeField] public float highspeed = 12f;
     [Tooltip("The actual enemy speed")] [SerializeField] public float speed = 1f;
 
+    Renderer onScreen;
+
     private void Start()
     {
         speed = Random.Range(lowspeed,highspeed);
+        onScreen = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + Vector2.left*Time.fixedDeltaTime*speed);
+        if (!onScreen.isVisible)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
