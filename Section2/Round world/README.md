@@ -1,11 +1,8 @@
-# Unity week 2: Prefabs, collisions, coroutines
+# Round World
+### Change the boundries so when the spaceship reaches the end of the screen it reapears on the other side.
 
-Some material is based on the Udemy course:
-[The Ultimate Guide to Game Development with Unity 2019](https://www.udemy.com/the-ultimate-guide-to-game-development-with-unity/), by Jonathan Weinberger
+we added the script "Round Boundry" 
 
+https://github.com/EladMotzny/unity-homework6/blob/0b6d23fe242917ce726defebe9705343597c96ed/Section2/Round%20world/Assets/Scripts/3-collisions/RoundBoundary.cs#L5-L50
 
-Some assets are from:
-* [Matt Whitehead](https://ccsearch.creativecommons.org/photos/7fd4a37b-8d1a-4d4c-80a2-4ca4a3839941)
-* [Kenney's space kit](https://kenney.nl/assets/space-kit)
-* [Ductman's 2D Animated Spacehips](https://assetstore.unity.com/packages/2d/characters/2d-animated-spaceships-96852)
-* [Franc from the Noun Project](https://commons.wikimedia.org/w/index.php?curid=64661575)
+Explaination: We assign all of the screen edges and every time an object crosses it, the object appears at the other side of the screen.
